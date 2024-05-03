@@ -1,0 +1,22 @@
+meta {
+  name: READ
+  type: http
+  seq: 6
+}
+
+get {
+  url: http://localhost:5000/api/users/piggybank/ktp
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIiwidXNlcklkIjoiNjYwZDBiYzcyMDA3MjdmOWZlMDNhOGQ3IiwiaWF0IjoxNzE0NzQyNDQ5LCJleHAiOjE3MTQ4Mjg4NDl9.Y3U_HmVD7HCL1a-u-QjXbm4y5HnTvehBygiRBIxDkGk
+}
+
+body:json {
+  {
+    "email": "jakiko1@example.com",
+    "password":"123_Sabibubedo"
+  }
+}

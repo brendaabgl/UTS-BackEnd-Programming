@@ -1,0 +1,24 @@
+meta {
+  name: UPDATE
+  type: http
+  seq: 7
+}
+
+put {
+  url: http://localhost:5000/api/users/piggybank/ktp/6634e8d9ebe25a5b5e1766b6
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIiwidXNlcklkIjoiNjYwZDBiYzcyMDA3MjdmOWZlMDNhOGQ3IiwiaWF0IjoxNzE0NzQ0MDI3LCJleHAiOjE3MTQ4MzA0Mjd9.uBVwrIgLHzghuRdPNbyPIIZ-mJjIV17M9lXmMUGOo68
+}
+
+body:json {
+  {
+    "name":"jaki",
+    "email":"jakiko1@example.com",
+    "password":"123_Sabibubedo",
+    "ktp_baru":"1234567897"
+  }
+}

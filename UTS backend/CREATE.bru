@@ -1,0 +1,26 @@
+meta {
+  name: CREATE
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:5000/api/users/piggybank
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIiwidXNlcklkIjoiNjYwZDBiYzcyMDA3MjdmOWZlMDNhOGQ3IiwiaWF0IjoxNzE0NzQyNDQ5LCJleHAiOjE3MTQ4Mjg4NDl9.Y3U_HmVD7HCL1a-u-QjXbm4y5HnTvehBygiRBIxDkGk
+}
+
+body:json {
+  {
+    "name" : "jaki",
+    "email":"jakiko1@example.com",
+    "password":"123_Sabibubedo",
+    "password_confirm":"123_Sabibubedo",
+    "balance":"50000000000",
+    "ktp":"1234567898"
+  }
+}
